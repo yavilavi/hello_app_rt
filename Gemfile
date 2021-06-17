@@ -16,8 +16,8 @@ end
 
 group :development do
   gem 'listen',             '3.4.1'
-  gem 'rack-mini-profiler', '2.3.1'
   gem 'spring',             '2.1.1'
+  gem 'spring-watcher-listen', '2.0.1'
   gem 'web-console',        '4.1.0'
 end
 
@@ -26,5 +26,10 @@ group :test do
   gem 'selenium-webdriver', '3.142.7'
   gem 'webdrivers',         '4.6.0'
 end
+
+group :production do
+  gem 'pg', '1.2.3'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
